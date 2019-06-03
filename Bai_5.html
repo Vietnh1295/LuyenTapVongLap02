@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+Số tiền ban dau( vnd )  <input type="number" id="SoTienBanDau"><br><br>
+Số tháng cho vay      <input type="number" id="SoThangChoVay" style="margin-left: 32px"><br><br>
+Lãi xuất hàng tháng(%)<input type="number" id="LaiXuatHangThang"><br><br>
+<input type="button" onclick="TinhTien()" value="Tính Toán">
+<p id="res">Kết quả</p>
+<script>
+    function  TinhTien() {
+    var SoTienBanDau=parseInt(document.getElementById('SoTienBanDau').value);
+    var SoThangChoVay=parseInt(document.getElementById('SoThangChoVay').value);
+    var LaiXuatHangThang=parseInt(document.getElementById('LaiXuatHangThang').value);
+
+for(var i=0;i<SoThangChoVay;i++) {
+    SoTienBanDau =SoTienBanDau+ SoTienBanDau * (LaiXuatHangThang/100);
+}
+    document.getElementById('res').innerHTML='Số tiền phải trả là  '+ SoTienBanDau;}
+</script>
+</body>
+</html>

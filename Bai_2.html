@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num=parseInt(prompt('Nhập số nguyên dương'));
+    while(num<0)
+    {
+        num=parseInt(prompt('Mời nhập lại số nguyên dương'));
+    }
+    var res=1;
+    for(var i=1;i<=num;i++)
+    {
+        res*=i;
+    }
+    alert('Giai thừa của số '+num+' là '+res);
+</script>
+</body>
+</html>

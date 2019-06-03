@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <input type="button" onclick="TamGiacMot();TamGiacHai();TamGiacBa();TamGiacBon();" value="Tam Giác">
+</head>
+
+<body>
+<script>
+    var TamGiac='';
+    var HangMotSao='*';
+    var HangHaiSao='**';
+    var HangBaSao='***';
+    var HangBonSao='****';
+    var HangNamSao='*****';
+    function TamGiacMot() {
+        for (var i = 1; i <= 5; i++) {
+            switch (i)
+            {
+                case 1:
+                    TamGiac=HangMotSao;
+                    break;
+                case 2:
+                    TamGiac=HangHaiSao; break;
+                case 3:
+                    TamGiac=HangBaSao; break;
+                case 4:
+                    TamGiac=HangBonSao; break;
+                case 5:
+                    TamGiac=HangNamSao; break;
+            }
+            document.writeln(TamGiac+'<br>');
+        }
+        document.writeln('<hr>')
+    }
+    function TamGiacHai() {
+        for (var i = 5; i >= 1; i--) {
+            switch (i)
+            {
+                case 1:
+                    TamGiac=HangMotSao; break;
+                case 2:
+                    TamGiac=HangHaiSao; break;
+                case 3:
+                    TamGiac=HangBaSao; break;
+                case 4:
+                    TamGiac=HangBonSao; break;
+                case 5:
+                    TamGiac=HangNamSao; break;
+            }
+            document.writeln(TamGiac+'<br>');
+        }
+        document.writeln('<hr>')
+    }
+    function TamGiacBa() {
+        for (var i = 1; i <= 5; i++) {
+            switch (i)
+            {
+                case 1:
+                    TamGiac='&nbsp;&emsp;'+HangMotSao; break;
+                case 2:
+                    TamGiac='&ensp;&ensp;'+HangHaiSao; break;
+                case 3:
+                    TamGiac='&ensp;&nbsp'+HangBaSao; break;
+                case 4:
+                    TamGiac='&nbsp;'+HangBonSao; break;
+                case 5:
+                    TamGiac=HangNamSao; break;
+            }
+            document.writeln(TamGiac+'<br>');
+        }
+        document.writeln('<hr>')
+    }
+    function TamGiacBon() {
+        for (var i = 5; i >= 1; i--) {
+            switch (i)
+            {
+                case 1:
+                    TamGiac='&nbsp;&emsp;'+HangMotSao; break;
+                case 2:
+                    TamGiac='&ensp;&ensp;'+HangHaiSao; break;
+                case 3:
+                    TamGiac='&ensp;&nbsp'+HangBaSao; break;
+                case 4:
+                    TamGiac='&nbsp;'+HangBonSao; break;
+                case 5:
+                    TamGiac=HangNamSao; break;
+            }
+            document.writeln(TamGiac+'<br>');
+        }
+        document.writeln('<hr>')
+    }
+</script>
+</body>
+</html>
